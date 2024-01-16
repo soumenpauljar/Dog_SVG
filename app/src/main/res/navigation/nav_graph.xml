@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.dog_svg.presentation.homescreen.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_randomImageFragment"
+            app:destination="@id/randomImageFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_imageListFragment"
+            app:destination="@+id/imageListFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/randomImageFragment"
+        android:name="com.example.dog_svg.presentation.randomImage.RandomImageFragment"
+        android:label="fragment_message_thread"
+        tools:layout="@layout/fragment_random_image" >
+    </fragment>
+
+    <fragment
+        android:id="@+id/imageListFragment"
+        tools:layout="@layout/fragment_image_list"
+        android:name="com.example.dog_svg.presentation.imageList.ImageListFragment"
+        android:label="ConversationFragment" >
+    </fragment>
+
+</navigation>

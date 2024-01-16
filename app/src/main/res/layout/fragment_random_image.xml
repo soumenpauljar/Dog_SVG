@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.randomImage.RandomImageFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="300dp"
+        android:id="@+id/dogImage"
+        android:layout_height="300dp"/>
+
+    <TextView
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:padding="10dp"
+        android:background="@drawable/button_background"
+        android:id="@+id/generateRandomImage"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Generate random Image"
+        android:textSize="18sp" />
+    </LinearLayout>
+</FrameLayout>
